@@ -14,13 +14,21 @@ window.addEventListener("load", () => {
 /* =========================================
    MOBILE MENU TOGGLE
 ========================================= */
+// const hamburger = document.getElementById("hamburger");
+// const navMenu = document.getElementById("navMenu");
+
+// hamburger.addEventListener("click", () => {
+//     navMenu.classList.toggle("active");
+// });
+
 const hamburger = document.getElementById("hamburger");
 const navMenu = document.getElementById("navMenu");
 
-hamburger.addEventListener("click", () => {
-    navMenu.classList.toggle("active");
-});
-
+if (hamburger && navMenu) {
+    hamburger.addEventListener("click", () => {
+        navMenu.classList.toggle("active");
+    });
+}
 /* =========================================
    SMOOTH SCROLLING
 ========================================= */
@@ -255,6 +263,7 @@ contactForm.addEventListener("submit", (e) => {
     }
 
     alert("Message sent successfully!");
+    console.log("message sent!");
 
     contactForm.reset();
 
