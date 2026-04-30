@@ -180,16 +180,37 @@ a {
     font-weight: 700;
     color: var(--text-color);
 } */
+ 
 
-.logo {
+/* .logo {
+     font-family: 'Audiowide', sans-serif;
     font-size: 1.6rem;
     font-weight: 700;
     color: #111827;
     text-decoration: none;
-}
+} */
 
 .logo-highlight {
     color: #6C63FF;
+}
+
+/* LOGO IMAGE */
+.logo {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+}
+
+.logo-img {
+    height: 160px; /* adjust size */
+    width: auto;
+    object-fit: contain;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.logo-img:hover {
+    transform: scale(1.05);
 }
 
 .nav-menu {
