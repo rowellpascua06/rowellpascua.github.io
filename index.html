@@ -1,0 +1,589 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- =========================================
+         META TAGS & SEO
+    ========================================== -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Professional Portfolio Website" />
+    <meta name="keywords" content="portfolio, web developer, software engineer, projects" />
+    <meta name="author" content="Your Name" />
+
+    <title>Professional Portfolio</title>
+
+    <!-- =========================================
+         GOOGLE FONTS
+    ========================================== -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+
+    <!-- =========================================
+         FONT AWESOME
+    ========================================== -->
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
+
+    <!-- =========================================
+         CSS
+    ========================================== -->
+    <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+
+    <!-- =========================================
+         LOADING SCREEN
+    ========================================== -->
+    <div class="loader-wrapper" id="loader">
+        <div class="loader"></div>
+    </div>
+
+    <!-- =========================================
+         SCROLL PROGRESS BAR
+    ========================================== -->
+    <div class="scroll-progress-container">
+        <div class="scroll-progress-bar" id="scrollBar"></div>
+    </div>
+
+    <!-- =========================================
+         BACK TO TOP BUTTON
+    ========================================== -->
+    <button class="back-to-top" id="backToTop" aria-label="Back to Top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <!-- =========================================
+         HEADER / NAVIGATION
+    ========================================== -->
+    <header class="header">
+        <nav class="navbar container">
+
+            <!-- <a href="#" class="logo">RMP.</a> -->
+            <a href="#" class="logo">
+                R<span class="logo-highlight">M</span>P.
+            </a>
+
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="#home" class="nav-link">Home</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#skills" class="nav-link">Skills</a></li>
+                <li><a href="#projects" class="nav-link">Projects</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+
+            <div class="nav-actions">
+
+                <!-- THEME TOGGLE -->
+                <button class="theme-toggle" id="themeToggle" aria-label="Toggle Theme">
+                    <i class="fas fa-moon"></i>
+                </button>
+
+                <!-- MOBILE MENU -->
+                <button class="hamburger" id="hamburger" aria-label="Mobile Menu">
+                    <i class="fas fa-bars"></i>
+                </button>
+
+            </div>
+
+        </nav>
+    </header>
+
+    <!-- =========================================
+         HERO SECTION
+    ========================================== -->
+    <section class="hero section" id="home">
+
+        <div class="hero-bg"></div>
+
+        <div class="container hero-container">
+
+            <div class="hero-content">
+
+                <p class="hero-subtitle">Hello, I'm</p>
+
+                <h1 class="hero-title">
+                    Rowell Martin
+                </h1>
+
+                <h1 class="hero-title1">
+                    Pascua
+                </h1>
+
+                <h2 class="hero-role">
+                    <span id="typingText"></span>
+                </h2>
+
+                <p class="hero-description">
+                    <!-- Passionate software engineer specializing in modern web
+                    development, UI/UX design, and scalable digital solutions. -->
+                    Software Engineer specializing in .NET development, SQL Server, and automation systems. 
+                    Experienced in building enterprise web and desktop applications for manufacturing and test 
+                    engineering, with a focus on scalable solutions, reporting, and process optimization.
+                </p>
+
+                <div class="hero-buttons">
+                    <a href="#projects" class="btn primary-btn">
+                        View Projects
+                    </a>
+
+                    <a href="#contact" class="btn secondary-btn">
+                        Contact Me
+                    </a>
+                </div>
+
+            </div>
+
+            <div class="hero-image">
+                <img src="images/profile.png"
+                    alt="Profile Image" />
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- =========================================
+         ABOUT SECTION
+    ========================================== -->
+    <section class="about section" id="about">
+
+        <div class="container">
+
+            <div class="section-header">
+                <h2>About Me</h2>
+                <p>Learn more about my journey and experience.</p>
+            </div>
+
+            <div class="about-content">
+            
+                <!-- <div class="about-image">
+                                <img src="images/profile.png"
+                                    alt="About Image" />
+                            </div> -->
+            
+                <div class="about-image">
+            
+                    <div class="about-frame"></div>
+            
+                    <img src="images/about.png" alt="About Image">
+            
+                </div>
+
+                <div class="about-text">
+
+                    <h3>Professional Web Developer & Software Engineer</h3>
+
+                    <p>
+                        I create modern, responsive, and user-friendly websites
+                        and applications with a strong focus on performance,
+                        accessibility, and user experience.
+                    </p>
+
+                    <p>
+                        With years of experience in front-end and back-end
+                        technologies, I enjoy solving problems and building
+                        digital products that make an impact.
+                    </p>
+
+                    <div class="stats">
+
+                        <div class="stat-card">
+                            <h4 class="counter" data-target="50">0</h4>
+                            <p>Projects Completed</p>
+                        </div>
+
+                        <div class="stat-card">
+                            <h4 class="counter" data-target="5">0</h4>
+                            <p>Years Experience</p>
+                        </div>
+
+                        <div class="stat-card">
+                            <h4 class="counter" data-target="20">0</h4>
+                            <p>Happy Clients</p>
+                        </div>
+
+                    </div>
+
+                    <a href="https://drive.google.com/file/d/1V8PE5Q8UTn81lt46w8KSWGP7t5i8Hpnb/view?usp=sharing" class="btn primary-btn" download>
+                        Download Resume
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- =========================================
+         SKILLS SECTION
+    ========================================== -->
+    <section class="skills section" id="skills">
+
+        <div class="container">
+
+            <div class="section-header">
+                <h2>Skills</h2>
+                <p>Technologies and tools I work with.</p>
+            </div>
+
+            <div class="skills-grid">
+
+                <!-- SKILL ITEM -->
+                <div class="skill-card">
+                    <div class="skill-info">
+                        <span>HTML</span>
+                        <span>95%</span>
+                    </div>
+
+                    <div class="progress-bar">
+                        <div class="progress html-progress" data-width="95"></div>
+                    </div>
+                </div>
+
+                <div class="skill-card">
+                    <div class="skill-info">
+                        <span>CSS</span>
+                        <span>90%</span>
+                    </div>
+
+                    <div class="progress-bar">
+                        <div class="progress css-progress" data-width="90"></div>
+                    </div>
+                </div>
+
+                <div class="skill-card">
+                    <div class="skill-info">
+                        <span>JavaScript</span>
+                        <span>88%</span>
+                    </div>
+
+                    <div class="progress-bar">
+                        <div class="progress js-progress" data-width="88"></div>
+                    </div>
+                </div>
+
+                <div class="skill-card">
+                    <div class="skill-info">
+                        <span>React</span>
+                        <span>85%</span>
+                    </div>
+
+                    <div class="progress-bar">
+                        <div class="progress react-progress" data-width="85"></div>
+                    </div>
+                </div>
+
+                <div class="skill-card">
+                    <div class="skill-info">
+                        <span>Node.js</span>
+                        <span>80%</span>
+                    </div>
+
+                    <div class="progress-bar">
+                        <div class="progress node-progress" data-width="80"></div>
+                    </div>
+                </div>
+
+                <div class="skill-card">
+                    <div class="skill-info">
+                        <span>UI/UX Design</span>
+                        <span>75%</span>
+                    </div>
+
+                    <div class="progress-bar">
+                        <div class="progress ui-progress" data-width="75"></div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- =========================================
+         PROJECTS SECTION
+    ========================================== -->
+    <section class="projects section" id="projects">
+
+        <div class="container">
+
+            <div class="section-header">
+                <h2>Projects</h2>
+                <p>Some of my recent works.</p>
+            </div>
+
+            <!-- FILTER BUTTONS -->
+            <div class="project-filters">
+
+                <button class="filter-btn active" data-filter="all">
+                    All
+                </button>
+
+                <button class="filter-btn" data-filter="web">
+                    Web
+                </button>
+
+                <button class="filter-btn" data-filter="app">
+                    App
+                </button>
+
+                <button class="filter-btn" data-filter="design">
+                    Design
+                </button>
+
+            </div>
+
+            <div class="projects-grid">
+
+                <!-- PROJECT CARD -->
+                <div class="project-card" data-category="web">
+
+                    <img src="https://via.placeholder.com/500x300"
+                        alt="Project Image" />
+
+                    <div class="project-content">
+
+                        <h3>Modern Business Website</h3>
+
+                        <p>
+                            Responsive business website with elegant UI and
+                            optimized performance.
+                        </p>
+
+                        <div class="project-links">
+
+                            <a href="#">
+                                <i class="fas fa-link"></i> Live
+                            </a>
+
+                            <a href="#">
+                                <i class="fab fa-github"></i> GitHub
+                            </a>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <div class="project-card" data-category="app">
+
+                    <img src="https://via.placeholder.com/500x300"
+                        alt="Project Image" />
+
+                    <div class="project-content">
+
+                        <h3>Task Management App</h3>
+
+                        <p>
+                            Productivity app with drag-and-drop features and
+                            team collaboration.
+                        </p>
+
+                        <div class="project-links">
+
+                            <a href="#">
+                                <i class="fas fa-link"></i> Live
+                            </a>
+
+                            <a href="#">
+                                <i class="fab fa-github"></i> GitHub
+                            </a>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <div class="project-card" data-category="design">
+
+                    <img src="https://via.placeholder.com/500x300"
+                        alt="Project Image" />
+
+                    <div class="project-content">
+
+                        <h3>Creative UI Design</h3>
+
+                        <p>
+                            Interactive and modern UI/UX design for a startup
+                            dashboard.
+                        </p>
+
+                        <div class="project-links">
+
+                            <a href="#">
+                                <i class="fas fa-link"></i> Live
+                            </a>
+
+                            <a href="#">
+                                <i class="fab fa-github"></i> GitHub
+                            </a>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <div class="project-card" data-category="web">
+
+                    <img src="https://via.placeholder.com/500x300"
+                        alt="Project Image" />
+
+                    <div class="project-content">
+
+                        <h3>E-Commerce Platform</h3>
+
+                        <p>
+                            Full-featured online shopping platform with payment
+                            integration.
+                        </p>
+
+                        <div class="project-links">
+
+                            <a href="#">
+                                <i class="fas fa-link"></i> Live
+                            </a>
+
+                            <a href="#">
+                                <i class="fab fa-github"></i> GitHub
+                            </a>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- =========================================
+         CONTACT SECTION
+    ========================================== -->
+    <section class="contact section" id="contact">
+
+        <div class="container">
+
+            <div class="section-header">
+                <h2>Contact Me</h2>
+                <p>Let's build something amazing together.</p>
+            </div>
+
+            <div class="contact-wrapper">
+
+                <!-- CONTACT INFO -->
+                <div class="contact-info">
+
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+
+                        <div>
+                            <h4>Email</h4>
+                            <p>rowellpascua06@email.com</p>
+                        </div>
+                    </div>
+
+                    <div class="contact-item">
+                        <i class="fas fa-phone"></i>
+
+                        <div>
+                            <h4>Phone</h4>
+                            <p>+63 921 754 8574</p>
+                        </div>
+                    </div>
+
+                    <div class="contact-item">
+                        <i class="fas fa-location-dot"></i>
+
+                        <div>
+                            <h4>Location</h4>
+                            <p>Concepcion, Tarlac</p>
+                        </div>
+                    </div>
+
+                </div>
+
+                <!-- CONTACT FORM -->
+                <form class="contact-form" id="contactForm">
+
+                    <input type="text"
+                        id="name"
+                        placeholder="Your Name"
+                        required />
+
+                    <input type="email"
+                        id="email"
+                        placeholder="Your Email"
+                        required />
+
+                    <textarea id="message"
+                        rows="6"
+                        placeholder="Your Message"
+                        required></textarea>
+
+                    <button type="submit" class="btn primary-btn">
+                        Send Message
+                    </button>
+
+                </form>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- =========================================
+         FOOTER
+    ========================================== -->
+    <footer class="footer">
+
+        <div class="container footer-container">
+
+            <p>
+                © 2026 Rowell Pascua. All rights reserved.
+            </p>
+
+            <div class="social-links">
+
+                <a href="#" aria-label="Facebook">
+                    <i class="fab fa-facebook-f"></i>
+                </a>
+
+                <a href="#" aria-label="Twitter">
+                    <i class="fab fa-twitter"></i>
+                </a>
+
+                <a href="https://www.linkedin.com/in/rowellmartinpascua/" aria-label="LinkedIn">
+                    <i class="fab fa-linkedin-in"></i>
+                </a>
+
+                <a href="#" aria-label="GitHub">
+                    <i class="fab fa-github"></i>
+                </a>
+
+            </div>
+
+        </div>
+
+    </footer>
+
+    <!-- =========================================
+         JAVASCRIPT
+    ========================================== -->
+    <script src="script.js"></script>
+
+</body>
+</html>
